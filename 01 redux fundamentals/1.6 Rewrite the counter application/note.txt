@@ -1,0 +1,2 @@
+- redux e ekta action define korar jonno mane ekta je ghtoche sei action ta ke ekta object diye define korte hoi sei object ta simple ekta javascript object jar modde type name ekta property must thakte hobe
+- tar mane jokon increment hobe tokon amra new object return korchi jar modde current state er shmosto value gula ke copy nicche tarpor jei value ta change hobe sei value ta ke ek kore bariye dicchi 

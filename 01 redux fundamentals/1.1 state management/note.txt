@@ -1,0 +1,54 @@
+1.1 what is state Managment 
+---> state er bangla meaning hocche obosta kono ekta perticular obosta , so pisition hocche amr ekta state jei ta shomoy er shate shate change hocche and kono ekta particular time e amr position fixed thakche so ei jinish ta e hocche state 
+
+---> amra jodi ekta webpage er kotha think sekhane o kintu web page different obosta thake , jokon user kono action nei ba kono ekta button e click kore ba inout e kichu like tokon mainly ki hoi amader webpage kono ekta intereactive kono ektar obostar poriborthon hoi, kono ekta particular time sei ta show obostai chilo kono ekta particular time sei ta hide hoye geche tar mane state ta change hocche 
+
+
+---> ekhane html and tailwind css diye ekta ui deisgn kora ache and amra jodi sei ui deisgn e lokki kori dekbo okhane shob kichu e static shudu matro number ta change hobe jokon user incerement e chap dibe tokon 0 ta 1 hobe 1 theke 2 hobe eirkom abr decrement er khtre o same button e  click korle number er value ta 1 kore kombe ... so ekhane theke bhujte parchi oi number tai hocche ei application er ekta state 
+
+--> apnr business requirement jodi emon hoi jokon increment buttion e user chap dibe tokon "simple counter application" liker jaigai hoye jabe "incrementing" abr decrement buttion click korle hoye jabe "decrementing"  tokon amader state r ekta bere jabe and amader ke oi title ta ke o kono ekta state modde rakte hobe karon aitao poriborthonshill 
+
+
+----> tahole ekta application deisgn korar age ekjon frontend enigneer first task hocche ei application e ki ki state ache sei ta first visualize kore fela 
+
+
+
+--> so amra ei chuto application ta ke ekon row javascript diye dekbo kibave ei state ta ke change kora jai 
+    1. first task hocche incerement and decrement button er click event ta ke listen korate hobe mane user jokon click korbe tokon ami listener diye listen korbo and listen kore ekta kichu korbo ki korbo counjt er value ekbar kore barabo r ekbar komabo 
+
+    2. ei kaj gulo korte hobe amake first dom element gula ke first dhorte hobe 
+            // select dom elements
+           const counterEl = document.getElementById("counter");
+           const incrementEl = document.getElementById("increment");
+           const decrementEl = document.getElementById("decrement");
+
+    3. ekono jehoto state amader ekta tai seitake ekta count name ekta varibale modde reke dilam 
+         // initial state
+         let count = 0;
+
+    4. tarpor amader kaj hocche event listener gula ke add kora 
+    // event listeners
+    incrementEl.addEventListener("click", () => {
+        count++;
+    });
+
+    decrementEl.addEventListener("click", () => {
+        count--;
+    });
+
+
+    5. amra kintu ui ta ke change korte parchi but ui e sei ta dekte parchi na amader ke sei ta manually korte hobe 
+
+    incrementEl.addEventListener("click", () => {
+    count++;
+    counterEl.innerText = count;
+    });
+
+    decrementEl.addEventListener("click", () => {
+        count--;
+        counterEl.innerText = count;
+    });
+
+---> tahole amra ekhan theke important jei takway ta pelam je jodi amra row javascript diye kaj kori and state managment kori tahole amader ke sekhetre state ta change korte hobe and ekhashte ui ta ke omanually change korte hobe
+
+--> so think amader appliaction jodi onk boro hoi onk state thakte pare tokon amader prottektar khetre amader doibar kore kaj korte hocche ui ke dhorte hocche tarpor sei ta ke change korte hocche so aita acutally old way kora eibahve ekhsomoy kaj kora hoto ...amra modern world e amra eibhave kaj kori na amra mainly reactive ui use kori like react, vue, angular ei jinish gula use kori tara simplye jei kaj ta kore amra jokon e state change korbo ui niye amader think korte hobe ui ke sei automatic update kore dibe r ekta problem code reusibilty bere jacche 

@@ -1,0 +1,6 @@
+1.3 React state management issues 
+   - amader application e ekon doi ta counter component ache app.js e 
+   - so bepara ta jodi emon hoi apni chacchen ekahne r ekta statiscts name r ekta component thakbe and ei component er modde moluto jei value doi ta ekon counter component ache oi doi ta value jog fol gula apni statiscts component e dekhate chacchen 
+   - so atr jonnop amader ke 3rd r ekta component baiye niye aste hobe 
+   - so jehoto statiscts component ta ek level ache counter component er shate and  tader parent hocche app.js 
+   - so ekon lifting-sate up process er maddome counter application er state gulo ek e level niye aste hobe amader code ta ke abr resturture korte hobe 

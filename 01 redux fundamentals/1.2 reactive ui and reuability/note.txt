@@ -1,0 +1,13 @@
+1.2 Reactive UI and Reusability 
+    - react diye korar karone amder code duplication ta kome jacche shobar jonno alada state thakche and seitake Reusability kora jacche
+
+    - our application had 3 parts - state, view and action 
+    - state is the source of turth that drives our apps, mane ekta shotter jaiga jekhane amder pura application ta ke control kore jekhane amader application databse ta thake so aita hocche ekta jaiga jeitar upor pora application ta oparate korbe 
+    - view is the declarative description of the Ui based on the current state, mane amader ui ta seitake amra declarative way te ba age theke reke dei sei jonno bola hoi declrative 
+    - actions are the events that occur in the app based on user input and trigger updates in the state ,,, mane use jokon kono input dibe tokon e basically action ghotbe and state er change korbe r state jokon e se change korbe tokon e abr rerender hobe react er khetre and ui ta automatically update hobe 
+    - this is called on-way data flow , mane ek dike data flow hocche 
+
+    view --> action --> state 
+    when state change then 
+    view --> action --> state 
+    kokono utla hobe na like state theke action action theke view

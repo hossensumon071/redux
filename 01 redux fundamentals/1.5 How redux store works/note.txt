@@ -1,0 +1,16 @@
+. jokon user kono ekta button chap dilo tokon multo ekta command store er kache chole gelo ei command ta ke redux er basay bola hoi action  
+      button --> command --> call action in redux 
+- so user ekta action dilo sei action ta redux er kache poichalo
+- so ei je action ta je se nilo store ei action newar ghotona ke bola hoi dipatch kora  
+    action dispatch kora ba aciton ghotalo 
+
+-  so store ke to ei action upor base kore kono ekta kaj korte hobe and amra jani je js kono ekta kibave kore ekta function diye kore store er kache o ekta function sei function ta diye muloto store kaj ta korte pare 
+- store er bitor e ei function ta ke redux er basay bola hoi  reducer
+- ei reducer e hocche redux er most important ekta part bolte paren full aplication er heart hocche ei reducer function and ei reducer function ta holl application kibave state change hobe sei ta ke control kore  
+- so now amader store e action and state ei doi ta jinish amader kache ache , reducer function ki se shudu action , state ta ke parameter hesebe nei and shomporno new ekta state se return kore 
+- tahole amra bolte pari reducer holo emon ekta function je ta hocche user er newa kono action and and current je state ei doi ta ke se parameter hesebe nei and fully new ekta state se return kore 
+- ekhane directly state ke change kore na if else conditon diye se dekbe joid action aita hoi tahole state ta ke eibhave change kore joid action oi ta hoi tahole state ta ke oibhave chnage koro 
+- so ekon reducer theke ekon amra new  state pelam and ei new state ekon redux current state hoye gelo. ei tai ekon reduc er current state  
+- jei jei component ta ei store ta ke subscribe kore rakchilo tara ashole ei update state ta autometcillay peye jabe 
+- jodi amra react use kori tokon current state pawar por sei ta autometcillay update hoye jabe 
+- tahole jodi summery kori ki dharalo amra first e user kono action prothom e reduc store kache pouchabo sei action upor base kore redux store jei reducer function ta  ache sei action upor base kore reducer function decision nibe je amake kon state ta kibave change korte hobe 

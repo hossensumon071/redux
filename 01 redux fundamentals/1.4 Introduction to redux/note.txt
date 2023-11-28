@@ -1,0 +1,7 @@
+1.4 why redux 
+
+- application ta jodi onk boro deeply nested hoye jai tokon ei state management kora onk taff hoye jai
+- so ei problem ke solve korar jonno jei concept ta eseche ta holo amra chaile state gula ke component er modde na reke ekta seprate jaigai raki  tahole problem ta kintu solve hoye jai tokon r konno dependenices lagche na jokon jei component er jei ta proyjon tokon se chaile se component ta ke use korte pare 
+- like ei state gula ke ekta seprate store bitor rakte pari and jei component dorkar sei component store ke subscribe kore raklo thene amra subscribe er maddome amra oi store theke specfic store ta amra use korte pari 
+- r aitai hocche redux er ekta simple ekta concept 
+- redux is a flixible state contianer for javascript apps that manages our application state separately
